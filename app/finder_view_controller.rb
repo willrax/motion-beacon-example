@@ -26,7 +26,7 @@ class FinderViewController < UIViewController
   end
 
   def locationManager(manager, didEnterRegion: region)
-    locationManager.startRangingBeaconsInRegion @beaconRegion
+    locationManager.startRangingBeaconsInRegion region
   end
 
   def locationManager(manager, didRangeBeacons: beacons, inRegion: region)
